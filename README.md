@@ -1,5 +1,25 @@
 Vue 3 + Electron + TypeScript + Vite 开发环境
 
+## 介绍
+
+安装依赖：
+
+```bash
+$ pnpm install
+```
+
+启动开发模式：
+
+```bash
+$ pnpm dev
+```
+
+打包：
+
+```bash
+$ pnpm build
+```
+
 ## electron-builder 打包配置
 
 ```json

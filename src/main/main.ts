@@ -1,13 +1,13 @@
-const { app, BrowserWindow } = require('electron')
-// const path = require('path')
+import { app, BrowserWindow } from 'electron'
+import path from 'path'
 
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
-    // webPreferences: {
-    //   preload: require('./preload.ts')
-    // }
+    webPreferences: {
+      preload: path.join(__dirname, './preload.js')
+    }
   })
 
   // 判断是开发环境还是打包环境
