@@ -10,5 +10,6 @@
     "isolatedModules": false,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"]
-  }
+  },
+  "include": ["./*.ts", "./*.d.ts"]
 }

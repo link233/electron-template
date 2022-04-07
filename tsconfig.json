@@ -8,10 +8,10 @@
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/render/**/*.ts", "src/render/**/*.d.ts", "src/render/**/*.tsx", "src/render/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
