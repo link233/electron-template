@@ -22,7 +22,7 @@ $ pnpm build
 
 ## electron-builder 打包配置
 
-```json
+```jsonc
 {
   // electron-builder配置
   "build": {
