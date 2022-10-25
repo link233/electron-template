@@ -13,7 +13,7 @@ function createWindow () {
   // 判断是开发环境还是打包环境
   if (process.env.npm_lifecycle_event === 'dev:electron') {
     // 开发环境
-    win.loadURL('http://localhost:3000/')
+    win.loadURL('http://localhost:8080/')
     win.webContents.openDevTools() // 打开开发工具
   } else {
     win.loadFile('dist/index.html')

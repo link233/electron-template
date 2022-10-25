@@ -12,6 +12,10 @@ export default defineConfig({
     },
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json']
   },
+  server: {
+    host: 'localhost',
+    port: 8080
+  },
   plugins: [
     vue()
   ]
