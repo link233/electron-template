@@ -6,3 +6,12 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+// 拓展 window 对象
+declare interface Window {
+  versions: {
+    node: string,
+    chrome: string,
+    electron: string
+  }
+}

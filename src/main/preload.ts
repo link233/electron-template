@@ -1,12 +1,10 @@
 /// <reference types="electron" />
 
-window.addEventListener('DOMContentLoaded', () => {
-  const replaceText = (selector: string, text: any) => {
-    const element = document.getElementById(selector)
-    if (element) element.innerText = text
-  }
+import { contextBridge } from 'electron'
 
-  for (const type of ['chrome', 'node', 'electron']) {
-    replaceText(`${type}-version`, process.versions[type])
-  }
+// 向主进程暴露接口
+contextBridge.exposeInMainWorld('versions', {
+  chrome: process.versions.chrome,
+  node: process.versions.node,
+  electron: process.versions.electron
 })

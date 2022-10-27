@@ -1,13 +1,19 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 import HelloWorld from './components/HelloWorld.vue'
+
+const nodeVersion = ref(window.versions.node)
+const chromeVersion = ref(window.versions.chrome)
+const electronVersion = ref(window.versions.electron)
 </script>
 
 <template>
   <h1>Hello World!</h1>
   <p>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    We are using Node.js <span>{{ nodeVersion }}</span>,
+    Chromium <span>{{ chromeVersion }}</span>,
+    and Electron <span>{{ electronVersion }}</span>.
   </p>
 
   <img alt="Vue logo" src="./assets/logo.png" />
