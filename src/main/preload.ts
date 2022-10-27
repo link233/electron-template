@@ -1,7 +1,7 @@
 /// <reference types="electron" />
 
 window.addEventListener('DOMContentLoaded', () => {
-  const replaceText = (selector: any, text: any) => {
+  const replaceText = (selector: string, text: any) => {
     const element = document.getElementById(selector)
     if (element) element.innerText = text
   }
