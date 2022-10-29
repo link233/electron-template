@@ -9,7 +9,7 @@
     "build": "pnpm build:render && pnpm build:electron",
     "build:render": "vue-tsc --noEmit && vite build",
     "build:electron": "electron-builder",
-    "build:main": "tsc -p src/mainEntry --outDir dist",
+    "build:main": "tsc -p src/main --outDir dist",
     "preview": "vite preview"
   },
   "keywords": [],
